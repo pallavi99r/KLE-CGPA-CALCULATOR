@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kleitmcacgpa</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("Image1.jpg");
+        background-size: cover;
+        background-position: center; /* Adjust as needed */
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+
+      #fileBox {
+        width: 300px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 100px auto;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      #fileBox a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fileBox">
+      <a href="sem1.html">Semester 1</a>
+      <a href="sem2.html">Semester 2</a>
+      <a href="sem3.html">Semester 3</a>
+      <a href="sem4.html">Semester 4</a>
+      <a href="SGPA.html">CGPA</a>
+    </div>
+
+    <script>
+      // JavaScript to handle redirection
+      document
+        .getElementById("fileBox")
+        .addEventListener("click", function (event) {
+          if (event.target.tagName === "A") {
+            event.preventDefault();
+            window.location.href = event.target.href;
+          }
+        });
+    </script>
+  </body>
+</html>
